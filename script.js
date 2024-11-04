@@ -178,7 +178,7 @@ async function handleDigChoice(location) {
     try {
         messageContainer.innerHTML = '';
         showMessage("不管了，这下面肯定有线索！");
-        let newSuccessRateModifier = (Math.random() * 1) - 0.5; // 在 -0.3 到 +0.3 内变化
+        let newSuccessRateModifier = (Math.random() * 0.8) - 0.4; // 在 -0.4 到 +0.4 内变化
         if (newSuccessRateModifier > 0) {
             await wait(2000).then(() => {});
             messageContainer.innerHTML = '';
